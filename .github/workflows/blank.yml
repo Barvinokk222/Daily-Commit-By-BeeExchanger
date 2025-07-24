@@ -96,6 +96,8 @@ jobs:
       - name: 🔔 Send Notification to Telegram
         uses: appleboy/telegram-action@v0.1.0
         with:
+          # Pastikan Anda mengatur secrets.TELEGRAM_TO di pengaturan repositori GitHub Anda.
+          # Gunakan ID grup Anda: -1002736638262
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
